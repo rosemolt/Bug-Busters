@@ -14,6 +14,9 @@ const Navbar = () => {
           <Link to="/" className="navbar-title">
             Home
           </Link>
+          <Link to="/login" className="navbar-title">
+            Login
+          </Link>
         </div>
       </nav>
       <style jsx>{`
