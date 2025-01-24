@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -7,23 +8,23 @@ const HomePage = () => {
         <div className="content">
           <h1>Say No To Paper Cups!</h1>
           <p>Here's Why...</p>
-          <a href="/learn-more" className="btn-link">Learn More</a>
+          <Link to="/awareness" className="btn-link">Learn More</Link>
         </div>
       </div>
       <style jsx>{`
         .home-page {
-          height: 100vh; /* Full viewport height */
+          height: 100vh;
           display: flex;
           justify-content: center;
           align-items: center;
-          background-image: url('https://m.media-amazon.com/images/I/51xWrbK92bL._AC_UF894,1000_QL80_.jpg'); /* Replace with your image URL */
+          background-image: url('https://m.media-amazon.com/images/I/51xWrbK92bL._AC_UF894,1000_QL80_.jpg');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
         }
 
         .content {
-          background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+          background: rgba(255, 255, 255, 0.8);
           padding: 20px 40px;
           border-radius: 10px;
           text-align: center;
